@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html> 
+<head> 
+    <meta charset='UTF-8'> 
+    <title>Chat</title> 
+    <link rel="stylesheet" href="Chat.css">
+</head> 
+<body> 
+    <div class="sidebar">
+        <h3>Минулі чати</h3>
+        <div id="chatHistoryList">
+            
+        </div>
+        
+        <button onclick="startNewChat()" class="new-chat-button">Новий чат</button>
+    </div>
+    
+    <div class="chat-container">
+        <div class="messages" id="chatMessages">
+            
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Введіть повідомлення..." />
+            <button onclick="sendMessage()">Надіслати</button>
+        </div>
+    </div>
+
+<script>
+        let chatHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
+        let currentChat = [];
+
+        function renderChatHistory() {
+            const chatHistoryList = document.getElementById("chatHistoryList");
+            chatHistoryList.innerHTML = "";
+            chatHistory.forEach((chat, index) => {
+                const chatLink = document.createElement("div");
+                chatLink.classList.add("chat-link");
+                chatLink.textContent = `Чат ${index + 1}`;
+                chatLink.onclick = () => loadChat(index);
+                chatHistoryList.appendChild(chatLink);
+            });
+        }
+
+        function loadChat(index) {
+            const chatMessages = document.getElementById("chatMessages");
+            chatMessages.innerHTML = "";
+            const chat = chatHistory[index];
+            chat.forEach(message => {
+                const messageElement = document.createElement("div");
+                messageElement.classList.add("message", message.sender);
+                messageElement.textContent = message.text;
+                chatMessages.appendChild(messageElement);
+            });
+        }
+        function startNewChat() {
+    if (currentChat.length > 0) {
+        chatHistory.push(currentChat); 
+        localStorage.setItem('chatHistory', JSON.stringify(chatHistory)); 
+        currentChat = [];
+    }
+    renderChatHistory(); 
+    document.getElementById("chatMessages").innerHTML = ""; 
+}
+
+        function sendMessage() {
+            const messageInput = document.getElementById("messageInput");
+            const messageText = messageInput.value.trim();
+            const chatMessages = document.getElementById("chatMessages");
+
+            if (messageText !== "") {
+               
+                const userMessage = document.createElement("div");
+                userMessage.classList.add("message", "user");
+                userMessage.textContent = messageText;
+                chatMessages.appendChild(userMessage);
+
+                
+                messageInput.value = "";
+
+                
+                setTimeout(() => {
+                    const botMessage = document.createElement("div");
+                    botMessage.classList.add("message", "bot");
+                    botMessage.textContent = `Бот: ${messageText}`;
+                    chatMessages.appendChild(botMessage);
+
+                    
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 500);
+            }
+        }
+    </script>
+</body> 
+</html>
