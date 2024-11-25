@@ -1,0 +1,324 @@
+/* Rectangle 16 */
+.LoginBtn {
+    position: absolute;
+    width: 182px;
+    height: 56px;
+    left: 945px;
+    top: 40px;
+
+    background: #E8E8E8;
+    border-radius: 67px;
+}
+.Background{
+/* Шапка сайту */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #1E1E1E;
+}
+
+
+
+.BeginBtn {
+    /* Rectangle 18 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+width: 182px;
+height: 56px;
+left: 1136px;
+top: 40px;
+
+border: 3px solid #E8E8E8;
+border-radius: 67px;
+}
+.Rectangle17 {
+/* Rectangle 17 */
+
+position: absolute;
+width: 342px;
+height: 56px;
+left: 326px;
+top: 40px;
+
+background: #E8E8E8;
+border-radius: 67px;
+}
+
+.TextSearch {
+/* Пошук розділів */
+
+width: 174px;
+height: 28px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+color: #1E1E1E;
+}
+
+/* Brain Chat */
+.Texth1 {
+    position: absolute;
+    width: 150px;
+    height: 46px;
+    left: 46px;
+    top: 50px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    
+    color: #E0E0E0;
+}
+
+/* Globe 1 */
+.Globe {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 828px;
+    top: 44px;
+    
+    background: url(Globe.png);
+}
+
+.Moon {
+      /* Moon 1 */
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 738px;
+top: 44px;
+
+background: url(Moon.png);
+}
+.Menu {
+/* Menu 1 */
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1360px;
+top: 44px;
+
+background: url(Menu.png);
+}
+.Search {
+/* icons8-поиск-48 1 */
+width: 48px;
+height: 48px;
+position: relative;
+left: 100px;
+bottom: 65px;
+
+background: url(Search.png);
+}
+.IntuitiveInterface {
+/* Інтуїтивний інтерфейс: */
+
+position: absolute;
+width: 259px;
+height: 28px;
+left: 195px;
+top: 711px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #E8E8E8;
+}
+
+.TextAdvantages {
+/* Наші переваги: */
+
+position: absolute;
+width: 235px;
+height: 38px;
+left: 135px;
+top: 263px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+}
+
+.AdaptiveInterface {
+/* application-window 1 */
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 135px;
+top: 701px;
+
+background: url(AdaptiveInterface.png);
+}
+.TextSecurity{
+/* Безпека даних: */
+
+position: absolute;
+width: 176px;
+height: 28px;
+left: 729px;
+top: 711px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #E8E8E8;
+}
+
+
+
+/* Адаптивний дизайн: */
+.TextDesign{
+    position: absolute;
+    width: 233px;
+    height: 28px;
+    left: 1261px;
+    top: 711px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #E8E8E8;
+}
+
+
+.TextIntuitiveInterface {
+/* Простота та зручність використання, щоб користувачі легко могли адаптуватися та почати користуватися програмою без зайвих складнощів. */
+
+position: absolute;
+width: 476px;
+height: 92px;
+left: 135px;
+top: 759px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+}
+
+/* Використання передових технологій шифрування, щоб забезпечити безпеку даних користувача та захистити конфіденційну інформацію. */
+.TextDataSecurity {
+    position: absolute;
+    width: 476px;
+    height: 69px;
+    left: 667px;
+    top: 759px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    
+    color: #FFFFFF;
+}
+
+
+.TextAdaptiveDesign {
+/* Інтерфейс, який автоматично підлаштовується під різні пристрої (мобільні, планшети, комп'ютери), що робить використання BrainChat зручним у будь-яких умовах. */
+
+position: absolute;
+width: 476px;
+height: 92px;
+left: 1199px;
+top: 759px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+}
+
+.IntarfaceBrainChat {
+/* IntarfaceBrainChat 1 */
+
+position: absolute;
+width: 476px;
+height: 357px;
+left: 135px;
+top: 334px;
+
+background: url(IntarfaceBrainChat.jpeg);
+border-radius: 20px;
+}
+
+.AdaptiveDesign {
+/* AdapriveDesign 1 */
+
+position: absolute;
+width: 476px;
+height: 356px;
+left: 1199px;
+top: 334px;
+
+background: url(AdapriveDesign.jpeg);
+border-radius: 20px;
+}
+
+.SecurityDatabase {
+/* SecurityDatabase 1 */
+
+position: absolute;
+width: 475px;
+height: 356px;
+left: 668px;
+top: 335px;
+
+background: url(SecurityDatabase.jpeg);
+border-radius: 20px;
+}
+
+.database {
+/* database 1 */
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 667px;
+top: 701px;
+
+background: url(database.png);
+}
+.BrowserSettings {
+/* browser-window-settings 1 */
+
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1199px;
+top: 700px;
+
+background: url(browser-window-settings.png);
+}
