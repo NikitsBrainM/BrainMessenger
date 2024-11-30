@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+}
+header{
+width: 100%;
+height: 200px;
+background-color: #1E1E1E;
+margin-bottom: 700px;
+}
+.brain {
+font-size: 50px;
+}
+
+.container {
+    display: flex;
+    gap: 50px;  
+    position: fixed;
+    bottom: 250px; 
+    left: 360px;  
+    flex-direction: row;
+    align-items: center;
+}
+
+.column {
+    text-align: center;
+}
+
+.rectangle { 
+    background-color: #2B2B2B; 
+    width: 256px; 
+    height: 257px; 
+    border-radius: 10%; 
+}
+.icons {
+width: 100px;
+height: 100px;
+margin-top: 80px;
+border-radius: 10%;
+
+}
+
+h1 {
+    color: white;
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: #333333;
+    color: white;
+    width: 98%;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer p {
+    margin: 0;
+    padding: 0 20px;
+    flex: 1;
+    text-align: left;
+}
+
+.footer button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.accept {
+    background-color: #ccc;
+    margin-right:50px;
+}
+
+.details {
+    background-color: #555;
+    margin-right:50px;
+}
